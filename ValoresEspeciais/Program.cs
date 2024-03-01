@@ -42,6 +42,19 @@ namespace ValoresEspeciais
 
             Console.WriteLine($"Result of positive infinity / positive infinity (double): {result1}"); // Results in NaN
             Console.WriteLine($"Result of NaN (float): {result2}"); // Direct NaN assignment
+
+            uint maxValue = uint.MaxValue;
+
+            try
+            {
+                // Tentar causar um overflow
+                uint overflowResult = checked(maxValue + 1);
+                Console.WriteLine($"Overflow result: {overflowResult}");
+            }
+            catch (OverflowException ex)
+            {
+                Console.WriteLine($"Overflow Exception: {ex.Message}");
+            }
         }
     }
 }
