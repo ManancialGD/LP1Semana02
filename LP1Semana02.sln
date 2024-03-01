@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmoothOperator", "SmoothOpe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPTZero", "ChatGPTZero\ChatGPTZero.csproj", "{69292354-A1D3-4365-B057-88E85BC97787}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakContinue", "BreakContinue\BreakContinue.csproj", "{6B095890-2103-4529-959B-0FC504D308D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{69292354-A1D3-4365-B057-88E85BC97787}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69292354-A1D3-4365-B057-88E85BC97787}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69292354-A1D3-4365-B057-88E85BC97787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B095890-2103-4529-959B-0FC504D308D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B095890-2103-4529-959B-0FC504D308D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B095890-2103-4529-959B-0FC504D308D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B095890-2103-4529-959B-0FC504D308D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
