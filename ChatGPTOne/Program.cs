@@ -17,6 +17,22 @@ namespace ChatGPTOne
                 question = Console.ReadLine();
                 switch(question)
                 {
+                    case "Shush":
+                        response = "...";
+                        Console.WriteLine(response);
+                        break;
+                    case "あ":
+                        response = "Why you speaking chinese?";
+                        Console.WriteLine(response);
+                        break;
+                    case "Cristiano Ronaldo":
+                        response = "Siiuuuuuuu";
+                        Console.WriteLine(response);
+                        break;
+                    case "":
+                        response = "Nice choice of words";
+                        Console.WriteLine(response);
+                        break;
                     case "EXIT":
                         isDone = true;
                         break;
