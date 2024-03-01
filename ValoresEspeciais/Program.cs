@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ValoresEspeciais
+namespace SpecialValues
 {
     class Program
     {
@@ -43,11 +43,12 @@ namespace ValoresEspeciais
             Console.WriteLine($"Result of positive infinity / positive infinity (double): {result1}"); // Results in NaN
             Console.WriteLine($"Result of NaN (float): {result2}"); // Direct NaN assignment
 
+            // Test and display the result of overflow in uints
             uint maxValue = uint.MaxValue;
 
             try
             {
-                // Tentar causar um overflow
+                // Try to cause an overflow
                 uint overflowResult = checked(maxValue + 1);
                 Console.WriteLine($"Overflow result: {overflowResult}");
             }
@@ -55,6 +56,24 @@ namespace ValoresEspeciais
             {
                 Console.WriteLine($"Overflow Exception: {ex.Message}");
             }
+
+            // Test and display the result of two types of overflow in floats
+            float maxValueFloat = float.MaxValue;
+
+            // Positive overflow
+            float positiveOverflow = maxValueFloat * 2;
+            Console.WriteLine($"Positive Overflow result: {positiveOverflow}");
+
+            // Negative overflow
+            float negativeOverflow = -maxValueFloat * 2;
+            Console.WriteLine($"Negative Overflow result: {negativeOverflow}");
+
+            // Test and display the result of underflow in floats
+            float minValueFloat = float.MinValue;
+
+            // Underflow
+            float underflowResult = minValueFloat / 2;
+            Console.WriteLine($"Underflow result: {underflowResult}");
         }
     }
 }
